@@ -65,7 +65,7 @@ include 'tindex.php';
           <td><?php echo $row['idVisiteur']; ?></td>
           <td><?php echo $row['dateModif']; ?></td>
           <td><?php echo $row['nbJustificatifs']; ?></td>
-          <td><input  type="button" class="button" name="btnvide" value="Vider la table" onclick="if(confirm('Voulez-vous Supprimer')) self.location.href='DeleteV1.php'?Id=$id" /></td>
+          <td><input  type="button" class="button" name="btnvide" value="Vider la table" onclick="if(confirm('Voulez-vous Supprimer')) self.location.href='delete.php'?Id=$id" /></td>
           <td><img src="modify.png" style="width: 49px;" ></td>
           <tr />
           <?php
