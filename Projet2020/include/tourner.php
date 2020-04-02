@@ -1,9 +1,9 @@
 <?php
 
-//insertion de la connection a la base de données
+//insertion de la connection a la base de donnÃ©es
 include 'connectAD.php';
 
-//selection les infos pour la tournée
+//selection les infos pour la tournÃ©e
 $sql = "SELECT TRNNUM,TRNDTE,CHFNOM,VEHIMMAT,REMMAT
             FROM tournee,chauffeur
             WHERE tournee.CHFID=chauffeur.CHFID;";
@@ -14,13 +14,13 @@ if($result) {
     while ($row = mysqli_fetch_array($result)) {
         ?>
 
-      <!-- creation des ligne des tournée -->
+      <!-- creation des ligne des tournÃ©e -->
         <tr>
           <td><?php echo $row['TRNNUM']; ?></td>
           <td><?php echo $row['TRNDTE']; ?></td>
           <td><?php echo $row['CHFNOM']; ?></td>
           <td><?php echo $row['VEHIMMAT']; ?></td>
-          <!-- Nouveauté remorque -->
+          <!-- NouveautÃ© remorque -->
           <td><?php
             $REMMAT = $row['REMMAT'];
             if ($REMMAT = $REMMAT ) {
