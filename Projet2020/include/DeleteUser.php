@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `test` (
 ;
 
 	
-	$sql = "DELETE FROM dev WHERE id=".$id;
+	$sql = "DELETE FROM user WHERE id=".$id;
 	
 	$result = executeSQL($sql);
 	
