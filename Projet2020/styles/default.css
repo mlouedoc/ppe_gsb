@@ -1,72 +1,122 @@
-body
-{  
-    background-image: url("https://wallpaperaccess.com/full/624156.jpg");  
-    background-attachment: fixed; /* Le fond restera fixe */  
-    font-family:'helvetica neue', helvetica, arial, sans-serif;
-    font-size:100%;  
-     color:#ffffff; /*code hexadÃ©cimal du noir*/  
-}  
-h1 {  
-text-align: center;  
-color:#ffffff;  
-}  
-.titre {  
-    font-size:235%;  
-     color:#ffffff;  
-     font-weight:bold;;  
-    text-align: center;  
-}  
-.sous-titre{  
-text-align : center;  
-color: #ffffff;      
-}  
-.bouttons {  
-}  
-tr {  
-text-align: center;  
-color:#ffffff;  
-}    
-table 
-{ 
-margin: auto; 
-} 
-td 
-{ 
-text-align :center; 
-} 
-  table-layout: fixed; 
-  width: 100%; 
-  border-collapse: collapse; 
-  border: 3px solid purple; 
-} 
-thead th:nth-child(1) { 
-  width: 30%; 
-} 
-thead th:nth-child(2) { 
-  width: 20%; 
-} 
-thead th:nth-child(3) { 
-  width: 15%; 
-} 
-thead th:nth-child(4) { 
-  width: 35%; 
-} 
-th, td { 
-  padding: 20px; 
-} 
-input {  
-margin-left: 0%;  
-color:#00000;  
+table, th, td {
+  border: 1px solid black;
 }
-.boxT { 
-  width: 100%;  
-  height: 100%; 
-  position: relative; 
-  border-radius: 0px; 
-  background: #EEE; 
-  background-color: rgba(0,0,50,0.6); 
-} 
-.ribbon { 
-  position: absolute; 
-  left: -5px; top: -5px; 
-  z-index: 1;
+
+th {
+  background-color: dodgerblue;
+  color: black;
+}
+
+  
+  
+  /*--------------------top--------------------*/
+
+#PageCentrale {
+ margin-left: auto;
+ margin-right: auto;
+}
+/********************************************************/
+#BandeMenuHaut {
+ display: block;
+ position: fixed;
+ margin-top: 0px;
+ top: 0px;
+ left: 0px;
+ width: 100%;
+ height: 55px;
+ /* z-index: 999;*/
+ /* padding-top: 10px;*/  /*décalage du texte vers le bas*/
+ text-align: center;
+ text-indent: 0px; /*décalage du texte vers la droite*/
+ font-size: 18px;
+ color: #FFFFFF;
+ background-color: #111;
+}
+
+  .ParamOpaciteMenu{
+    filter : alpha(opacity=90); /* code en plus pour IE9 */
+    opacity : 0.9;
+  }
+  
+/********************************************************/  
+  
+ ul#MenuRubriques
+{
+margin-left: 0;
+padding-left: 0;
+}
+
+#MenuRubriques li
+{
+display: inline;
+list-style-type: none;
+}
+
+#MenuRubriques a {
+padding: 3px 10px;
+}
+
+#MenuRubriques a:link, #MenuRubriques a:visited
+{
+text-decoration: none;
+color: black;
+background-color: dodgerblue;
+}
+
+#MenuRubriques a:hover
+{
+text-decoration: none;
+color: black;
+background-color: green;
+}
+
+.logo{
+	display : block;
+	margin-top : 12%;
+	margin-left : auto;
+	
+	margin-right : auto;
+}
+  
+h3{
+	text-align :center;
+}
+/*-------------------------------------*/
+
+/*-----------centre et tableau---------*/
+body{
+	background-color : #f3f3f3;
+}
+
+.contenu{
+	background-color:#f3f3f3;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	text-align: center;
+}
+
+table{
+	
+	margin-left: 80%;
+	text-align: center;
+    border-collapse: collapse;
+}
+
+tr{
+	text-align: center;
+}
+
+.ajout{
+	background-color : dodgerblue;
+}
+
+h2{
+	 text-align: center; 
+	 padding-left:2%;
+}
+
+.retour, .envoye{
+	display: block;
+   margin : auto;
+}
