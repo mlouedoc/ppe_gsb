@@ -31,7 +31,7 @@ include '../include/top.php';
 	    <br>
 	    <p></p>
 	    	<label for="cp">Code postal : </label>
-			<input id="cp" name="cp" type="text" value="" size="5" maxlength="5"/>
+			<input id="cp" name="cp" type="number" value="" size="5" maxlength="5"/>
 	    <br>
 	    <p></p>
 	    	<label for="ville">Ville : </label>
@@ -39,7 +39,7 @@ include '../include/top.php';
 	    <br>
 	    <p></p>
 	    	<label for="pwd">Mot de passe : </label>
-			<input id="pwd" name="pwd" type="text" value="" size="30" maxlength="30"/>
+			<input id="pwd" name="pwd" type="password" value="" size="30" maxlength="30"/>
 	    <br>
 	    <p></p>
 	    	<label for="login">Login : </label>
